@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bbe1c3;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-heading {
+  margin-top: 10px;
+  text-align: center;
+  }
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+.box {
+  background-color: #ffffc0;
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 20%;
+  border: 1px solid black;
+  font-size: 7vmin;
+  color: #086788;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.reset-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.new-btn {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.new-btn_2 {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.msg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vmin;
+  gap: 2rem;
+}
+
+.draw-msg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vmin;
+  gap: 2rem;
+}
+
+#msg {
+  text-decoration: underline;
+  color: #F61067;
+  font-weight: bold;
+  font-size: 10vmin;
+
+}
+
+.draw-msg {
+  color: #F61067;
+  font-weight: bold;
+  font-size: 10vmin;
+}
+
+.hide {
+  display : none;
+}
+
+.hide-draw {
+  display : none;
+}
+
+/* media query for screens with max width of 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 80vh;
+  }
+  .game {
+    height: 50vmin;
+    width: 50vmin;
+  }
+  .box {
+    height: 15vmin;
+    width: 15vmin;
+    font-size: 5vmin;
+  }
+  .reset-btn, .new-btn, .new-btn_2 {
+    height: 40px;
+    width: 100px;
+    font-size: 3vmin;
+  }
+  .msg-container, .draw-msg-container {
+    height: 100vmin;
+    gap: 1rem;
+  }
+  #msg, .draw-msg {
+    font-size: 8vmin;
+  }
+}
+
+/* media query for screens with max width of 400px */
+@media only screen and (max-width: 400px) {
+  .container {
+    height: 90vh;
+  }
+  .game {
+    height: 40vmin;
+    width: 40vmin;
+  }
+  .box {
+    height: 12vmin;
+    width: 12vmin;
+    font-size: 4vmin;
+  }
+  .reset-btn, .new-btn, .new-btn_2 {
+    height: 30px;
+    width: 80px;
+    font-size: 2.5vmin;
+  }
+  .msg-container, .draw-msg-container {
+    height: 90vmin;
+    gap: 0.5rem;
+  }
+  #msg, .draw-msg {
+    font-size: 6vmin;
+  }
+}
+
+/* media query for screens with max width of 300px */
+@media only screen and (max-width: 300px) {
+  .container {
+    height: 100vh;
+  }
+  .game {
+    height: 30vmin;
+    width: 30vmin;
+  }
+  .box {
+    height: 10vmin;
+    width: 10vmin;
+    font-size: 3vmin;
+  }
+  .reset-btn, .new-btn, .new-btn_2 {
+    height: 20px;
+    width: 60px;
+    font-size: 2vmin;
+  }
+  .msg-container, .draw-msg-container {
+    height: 80vmin;
+    gap: 0.2rem;
+  }
+  #msg, .draw-msg {
+    font-size: 4vmin;
+  }
+}
+
+/* make the game board a flexible grid */
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+/* make the game cells flexible
